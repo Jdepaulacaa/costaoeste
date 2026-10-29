@@ -1,14 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=https://docs.google.com/presentation/d/1KARwvApfmHhubJ_POVBkjts1zTG_OGKQNuaEFuxOsso/edit?usp=sharing">
-  <title>Redireccionando...</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Planificación familiar del viaje por la costa oeste de Estados Unidos 2026-27.">
+<title>Viaje costa oeste 2026-27</title>
+<style>
+:root {
+  --site-primary: #173f46;
+  --site-on-primary: #ffffff;
+  --site-secondary: #dcebe5;
+  --site-on-secondary: #173f46;
+  --site-background: #f4f6f2;
+  --site-on-background: #1c2928;
+  --site-font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --site-font-heading: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --site-heading-scale: 1;
+  --site-spacing-scale: 1;
+  --site-radius-scale: 1;
+  --site-decoration-opacity: 1;
+  --surface: light-dark(#ffffff, #1b2727);
+  --surface-soft: light-dark(#edf2ee, #243333);
+  --muted: light-dark(#657571, #aab9b4);
+  --line: light-dark(#dce4df, #3a4a48);
+  --accent: #b66c42;
+}
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body { margin: 0; background: var(--site-background); color: var(--site-on-background); font-family: var(--site-font-body); }
+#app { min-height: 100vh; width: 100%; background-color: var(--site-background); color: var(--site-on-background); border-radius: 0; overflow: hidden; }
+header { background: var(--site-primary); color: var(--site-on-primary); padding: calc(24px * var(--site-spacing-scale)) max(22px, calc((100vw - 1120px)/2)); }
+.nav { display:flex; align-items:center; justify-content:space-between; gap:20px; max-width:1240px; margin:auto; flex-wrap:wrap; }
+.brand { font-weight:750; letter-spacing:-.03em; font-size:18px; white-space:nowrap; }
+.nav-links { display:flex; gap:8px; flex-wrap:wrap; }
+.nav button { border:1px solid #ffffff40; background:transparent; color:inherit; padding:9px 13px; border-radius:999px; font:inherit; cursor:pointer; }
+.nav button.active, .nav button:hover { background:var(--site-secondary); color:var(--site-on-secondary); }
+main { max-width:1120px; margin:auto; padding:38px 24px 76px; }
+.eyebrow { text-transform:uppercase; letter-spacing:.16em; font-size:11px; font-weight:750; color:var(--accent); }
+h1,h2,h3 { font-family:var(--site-font-heading); letter-spacing:-.045em; }
+h1 { font-size:calc( clamp(38px, 6vw, 64px) * var(--site-heading-scale)); line-height:1.02; margin:13px 0 18px; max-width:760px; }
+.lead { color:var(--muted); max-width:670px; line-height:1.7; font-size:17px; }
+.hero { display:grid; grid-template-columns:1.35fr .65fr; gap:24px; align-items:stretch; margin-bottom:54px; }
+.hero-panel { background:var(--site-secondary); color:var(--site-on-secondary); padding:30px; border-radius:calc(24px * var(--site-radius-scale)); display:flex; flex-direction:column; justify-content:space-between; min-height:230px; }
+.hero-panel .big { font-size:50px; font-weight:800; letter-spacing:-.07em; line-height:1; }
+.hero-panel p { line-height:1.6; margin-bottom:0; max-width:280px; }
+.section-head { display:flex; justify-content:space-between; align-items:end; gap:16px; margin:0 0 20px; }
+h2 { font-size:calc(30px * var(--site-heading-scale)); margin:7px 0 0; }
+.section-note { color:var(--muted); font-size:13px; }
+.tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px; }
+.chip { border:1px solid var(--line); background:var(--surface); color:var(--site-on-background); border-radius:999px; padding:8px 13px; font:inherit; font-size:13px; cursor:pointer; }
+.chip.active { background:var(--site-primary); color:var(--site-on-primary); border-color:var(--site-primary); }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.card { background:var(--surface); border:1px solid var(--line); border-radius:calc(18px * var(--site-radius-scale)); padding:21px; display:flex; flex-direction:column; min-height:225px; box-shadow:0 8px 26px #183b3210; }
+.card-top { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.tag { color:var(--site-on-secondary); background:var(--site-secondary); border-radius:999px; padding:5px 9px; font-size:11px; font-weight:700; }
+.card h3 { font-size:20px; margin:20px 0 8px; }
+.card p { color:var(--muted); line-height:1.55; font-size:14px; margin:0 0 22px; }
+.card a, .text-link { color:var(--site-primary); font-weight:750; text-decoration:none; margin-top:auto; font-size:14px; }
+@media (prefers-color-scheme: dark) { .card a,.text-link { color:#a9d5c7; } }
+.card a:hover,.text-link:hover { text-decoration:underline; }
+.trip { margin-top:62px; }
+.trip-banner { background:var(--site-primary); color:var(--site-on-primary); border-radius:calc(22px * var(--site-radius-scale)); padding:28px; display:flex; justify-content:space-between; gap:24px; align-items:center; margin-bottom:18px; }
+.trip-banner h3 { font-size:26px; margin:6px 0; }
+.trip-banner p { color:#ffffffbd; margin:0; line-height:1.5; }
+.trip-banner .date { font-size:14px; font-weight:700; border:1px solid #ffffff55; border-radius:999px; padding:10px 14px; white-space:nowrap; }
+.city-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.city { background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:19px; }
+.city .number { color:var(--accent); font-size:12px; font-weight:800; letter-spacing:.12em; }
+.city h3 { margin:9px 0 7px; font-size:19px; }
+.city p { color:var(--muted); font-size:13px; line-height:1.55; margin:0; }
+.trip-details { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:14px; }
+.detail { background:var(--surface-soft); border-radius:16px; padding:20px; }
+.detail h3 { margin:0 0 8px; font-size:17px; }
+.detail p { color:var(--muted); font-size:13px; line-height:1.55; margin:0; }
+footer { border-top:1px solid var(--line); padding:24px; text-align:center; color:var(--muted); font-size:12px; }
+.empty { color:var(--muted); padding:22px; border:1px dashed var(--line); border-radius:14px; }
+.tab-panel[hidden] { display:none; }
+.tab-intro { color:var(--muted); line-height:1.65; max-width:760px; margin:0 0 22px; }
+.placeholder { background:var(--surface); border:1px dashed var(--line); border-radius:18px; padding:28px; color:var(--muted); line-height:1.65; }
+.placeholder strong { display:block; color:var(--site-on-background); font-size:18px; margin-bottom:6px; }
+.activity-list { display:grid; gap:10px; }
+.activity-place { background:var(--surface); border:1px solid var(--line); border-radius:15px; overflow:hidden; }
+.activity-place summary { cursor:pointer; list-style:none; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:17px 20px; font-weight:750; }
+.activity-place summary::-webkit-details-marker { display:none; }
+.activity-place summary::after { content:'+'; color:var(--accent); font-size:22px; line-height:1; }
+.activity-place[open] summary::after { content:'−'; }
+.activity-place summary:hover { background:var(--surface-soft); }
+.activity-place .activity-content { padding:0 20px 18px; color:var(--muted); font-size:14px; line-height:1.65; }
+.activity-content ul { margin:0; padding-left:20px; }
+.activity-content li+li { margin-top:6px; }
+.activity-content a { color:var(--site-primary); font-weight:750; text-decoration:none; }
+@media (prefers-color-scheme: dark) { .activity-content a { color:#a9d5c7; } }
+.itinerary-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:16px; background:var(--surface); box-shadow:0 8px 26px #183b3210; }
+.itinerary { width:100%; border-collapse:collapse; min-width:760px; font-size:13px; }
+.itinerary th { background:var(--site-primary); color:white; text-align:left; padding:13px 14px; font-size:12px; letter-spacing:.03em; }
+.itinerary td { padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; line-height:1.45; }
+.itinerary tr:last-child td { border-bottom:0; }
+.itinerary td:first-child { color:var(--accent); font-weight:800; white-space:nowrap; }
+.itinerary td:nth-child(2),.itinerary td:nth-child(3) { white-space:nowrap; }
+.itinerary .flight-row td { background:var(--surface-soft); font-weight:650; }
+.itinerary-note { color:var(--muted); font-size:12px; margin:12px 2px 0; }
+@media(max-width:760px) { .hero {grid-template-columns:1fr;} .cards,.city-grid {grid-template-columns:1fr 1fr;} .trip-banner {align-items:flex-start; flex-direction:column;} }
+@media(max-width:520px) { main {padding:36px 17px 54px;} .nav {align-items:flex-start; flex-direction:column;} .cards,.city-grid,.trip-details {grid-template-columns:1fr;} .section-head {align-items:flex-start; flex-direction:column;} }
+</style>
 </head>
 <body>
-  <script>
-    window.location.replace("https://docs.google.com/presentation/d/1KARwvApfmHhubJ_POVBkjts1zTG_OGKQNuaEFuxOsso/edit?usp=sharing");
-  </script>
-  <p>Redireccionando a la presentación...</p>
+<div id="app">
+<header>
+  <nav class="nav" aria-label="Navegación principal">
+    <div class="brand">Viaje costa oeste 2026-27</div>
+    <div class="nav-links" role="tablist" aria-label="Secciones del viaje">
+      <button class="active" role="tab" aria-selected="true" data-tab="itinerario">Itinerario</button>
+      <button role="tab" aria-selected="false" data-tab="presentaciones">Presentaciones</button>
+      <button role="tab" aria-selected="false" data-tab="alojamientos">Alojamientos</button>
+      <button role="tab" aria-selected="false" data-tab="mapas">Mapas</button>
+      <button role="tab" aria-selected="false" data-tab="playlist">Playlist</button>
+      <button role="tab" aria-selected="false" data-tab="actividades">Actividades</button>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="tab-panel" id="itinerario" role="tabpanel">
+    <div class="section-head"><div><div class="eyebrow">Planificación familiar</div><h2>Itinerario del viaje</h2></div><div class="section-note">Costa oeste de Estados Unidos</div></div>
+    <div class="trip-banner">
+      <div><div class="eyebrow" style="color:#e7b18e">Diciembre 2026 — Enero 2027</div><h3>Viaje por la costa oeste</h3><p>Itinerario, alojamientos, actividades y datos útiles para toda la familia.</p></div>
+      <div class="date">24 dic. — 16 ene.</div>
+    </div>
+    <div class="itinerary-wrap">
+      <table class="itinerary">
+        <thead><tr><th>N.º</th><th>Fecha</th><th>Día</th><th>Plan del día</th><th>Noche en</th></tr></thead>
+        <tbody>
+          <tr class="flight-row"><td>—</td><td>24 dic.</td><td>Jue</td><td>Salida desde Montevideo rumbo a Los Ángeles</td><td>En vuelo</td></tr>
+          <tr><td>1</td><td>25 dic.</td><td>Vie</td><td>Llegada a Los Ángeles · Santa Monica</td><td>Manhattan Beach / El Segundo</td></tr>
+          <tr><td>2</td><td>26 dic.</td><td>Sáb</td><td>Los Ángeles → San Diego · La Jolla y Old Town</td><td>San Diego (Mission Valley / Old Town)</td></tr>
+          <tr><td>3</td><td>27 dic.</td><td>Dom</td><td><a class="text-link" href="https://docs.google.com/presentation/d/1twI0hwoNIVc-BgRYylL_ujWLbP4GM1RSgq7kPJJJ3r0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Zoológico</a> · cumpleaños de Maia → Palm Springs</td><td>Palm Springs (7 Springs Inn &amp; Suites)</td></tr>
+          <tr><td>4</td><td>28 dic.</td><td>Lun</td><td>Rick’s · Joshua Tree · Amboy → Kingman</td><td>Kingman</td></tr>
+          <tr><td>5</td><td>29 dic.</td><td>Mar</td><td>Kingman → Ruta 66 histórica → Gran Cañón</td><td>Gran Cañón (Tusayan)</td></tr>
+          <tr><td>6</td><td>30 dic.</td><td>Mié</td><td>Gran Cañón → Page</td><td>Page</td></tr>
+          <tr><td>7</td><td>31 dic.</td><td>Jue</td><td>Lower Antelope + Monument Valley</td><td>Page</td></tr>
+          <tr><td>8</td><td>1 ene.</td><td>Vie</td><td>Page → Zion</td><td>Springdale</td></tr>
+          <tr><td>9</td><td>2 ene.</td><td>Sáb</td><td>Zion → <a class="text-link" href="https://docs.google.com/presentation/d/1KARwvApfmHhubJ_POVBkjts1zTG_OGKQNuaEFuxOsso/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Las Vegas</a></td><td>Las Vegas</td></tr>
+          <tr><td>10</td><td>3 ene.</td><td>Dom</td><td>Las Vegas → Three Rivers</td><td>Three Rivers</td></tr>
+          <tr><td>11</td><td>4 ene.</td><td>Lun</td><td>Tour por Sequoia</td><td>Three Rivers</td></tr>
+          <tr><td>12</td><td>5 ene.</td><td>Mar</td><td>Traslado → San Francisco</td><td>San Francisco</td></tr>
+          <tr><td>13</td><td>6 ene.</td><td>Mié</td><td>Muir Woods · Warriors</td><td>San Francisco</td></tr>
+          <tr><td>14</td><td>7 ene.</td><td>Jue</td><td><a class="text-link" href="https://docs.google.com/presentation/d/1KARwvApfmHhubJ_POVBkjts1zTG_OGKQNuaEFuxOsso/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Alcatraz</a> · Chinatown</td><td>San Francisco</td></tr>
+          <tr><td>15</td><td>8 ene.</td><td>Vie</td><td>Napa</td><td>Sunnyvale / Mountain View</td></tr>
+          <tr><td>16</td><td>9 ene.</td><td>Sáb</td><td>CHM + Apple → Monterey</td><td>Seaside / Marina</td></tr>
+          <tr><td>17</td><td>10 ene.</td><td>Dom</td><td><a class="text-link" href="https://docs.google.com/presentation/d/1twI0hwoNIVc-BgRYylL_ujWLbP4GM1RSgq7kPJJJ3r0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Acuario</a> + Big Sur</td><td>San Simeon / Cambria</td></tr>
+          <tr><td>18</td><td>11 ene.</td><td>Lun</td><td>Traslado → Los Ángeles · Downtown</td><td>Manhattan Beach / El Segundo</td></tr>
+          <tr><td>19</td><td>12 ene.</td><td>Mar</td><td>Eames · Venice · Rodeo</td><td>Manhattan Beach / El Segundo</td></tr>
+          <tr><td>20</td><td>13 ene.</td><td>Mié</td><td>Hollywood · Stahl House</td><td>Manhattan Beach / El Segundo</td></tr>
+          <tr><td>21</td><td>14 ene.</td><td>Jue</td><td>Universal Studios</td><td>Manhattan Beach / El Segundo</td></tr>
+          <tr><td>22</td><td>15 ene.</td><td>Vie</td><td>Salida desde Los Ángeles rumbo a Montevideo</td><td>En vuelo</td></tr>
+          <tr class="flight-row"><td>—</td><td>16 ene.</td><td>Sáb</td><td>Llegada a Montevideo</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="itinerary-note">El recorrido terrestre comprende 21 noches, del 25 de diciembre al 14 de enero. Los días 24, 15 y 16 corresponden a los vuelos internacionales.</p>
+  </section>
+
+  <section class="tab-panel" id="presentaciones" role="tabpanel" hidden>
+    <div class="section-head"><div><div class="eyebrow">Google Slides</div><h2>Documentos del viaje</h2></div><div class="section-note">Planificación y lugares de interés</div></div>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top"><span class="tag">Nevada · California</span><span class="section-note">Google Slides</span></div>
+        <h3>Las Vegas y Alcatraz</h3>
+        <p>Información sobre el hotel Flamingo de Las Vegas y la visita a la prisión de Alcatraz.</p>
+        <a href="https://docs.google.com/presentation/d/1KARwvApfmHhubJ_POVBkjts1zTG_OGKQNuaEFuxOsso/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Abrir documento ↗</a>
+      </article>
+      <article class="card">
+        <div class="card-top"><span class="tag">California</span><span class="section-note">Google Slides</span></div>
+        <h3>Zoológico de San Diego y Monterey Bay Aquarium</h3>
+        <p>Información y planificación de las visitas al zoológico de San Diego y al Monterey Bay Aquarium.</p>
+        <a href="https://docs.google.com/presentation/d/1twI0hwoNIVc-BgRYylL_ujWLbP4GM1RSgq7kPJJJ3r0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Abrir documento ↗</a>
+      </article>
+    </div>
+  </section>
+  <section class="tab-panel" id="alojamientos" role="tabpanel" hidden>
+    <div class="section-head"><div><div class="eyebrow">Dónde dormir</div><h2>Alojamientos</h2></div></div>
+    <p class="tab-intro">Hoteles y alojamientos de cada parada, con direcciones, fechas, habitaciones y datos de reserva.</p>
+    <div class="placeholder"><strong>Alojamientos del viaje</strong>Acá vamos a reunir las reservas de Los Ángeles, San Diego, San Francisco, Las Vegas y las demás paradas.</div>
+  </section>
+  <section class="tab-panel" id="mapas" role="tabpanel" hidden>
+    <div class="section-head"><div><div class="eyebrow">Rutas y ubicaciones</div><h2>Mapas</h2></div></div>
+    <p class="tab-intro">Mapas generales del recorrido, rutas en auto y ubicaciones de hoteles y actividades.</p>
+    <div class="placeholder"><strong>Mapas del recorrido</strong>Se pueden agregar acá el mapa general de la costa oeste y mapas separados por ciudad, con las paradas y los trayectos.</div>
+  </section>
+  <section class="tab-panel" id="playlist" role="tabpanel" hidden>
+    <div class="section-head"><div><div class="eyebrow">Música para la ruta</div><h2>Playlist de Spotify</h2></div></div>
+    <p class="tab-intro">La música para escuchar durante los viajes en auto y los días de paseo.</p>
+    <div class="spotify-embed" style="overflow:hidden;border-radius:18px;background:var(--surface);box-shadow:0 8px 26px #183b3210">
+      <iframe style="border-radius:18px;display:block" src="https://open.spotify.com/embed/playlist/3YmZICdLV9gU78mko9Yftf?utm_source=generator" width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Playlist del viaje en Spotify"></iframe>
+    </div>
+    <p class="tab-intro" style="margin-top:16px">Si el reproductor no se muestra, podés abrir la playlist directamente en <a class="text-link" href="https://open.spotify.com/playlist/3YmZICdLV9gU78mko9Yftf?si=KonD42p6TM62sXLl_xYB0Q" target="_blank" rel="noopener noreferrer">Spotify</a>.</p>
+  </section>
+  <section class="tab-panel" id="actividades" role="tabpanel" hidden>
+    <div class="section-head"><div><div class="eyebrow">Qué hacer</div><h2>Actividades</h2></div></div>
+    <p class="tab-intro">Seleccioná cada destino para desplegar las actividades y visitas previstas durante la estadía.</p>
+    <div class="activity-list">
+      <details class="activity-place"><summary>Los Ángeles</summary><div class="activity-content"><ul><li>Santa Monica y paseo por la costa.</li><li>Downtown Los Angeles.</li><li>Eames House, Venice y Rodeo Drive.</li><li>Hollywood y Stahl House.</li><li>Universal Studios Hollywood.</li></ul></div></details>
+      <details class="activity-place"><summary>San Diego</summary><div class="activity-content"><ul><li>La Jolla.</li><li>Old Town.</li><li><a href="https://docs.google.com/presentation/d/1twI0hwoNIVc-BgRYylL_ujWLbP4GM1RSgq7kPJJJ3r0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">San Diego Zoo · presentación</a>.</li></ul></div></details>
+      <details class="activity-place"><summary>Palm Springs</summary><div class="activity-content"><ul><li>Parada en Palm Springs y alojamiento en 7 Springs Inn &amp; Suites.</li></ul></div></details>
+      <details class="activity-place"><summary>Joshua Tree y Amboy</summary><div class="activity-content"><ul><li>Recorrido por Joshua Tree.</li><li>Parada en Amboy y Rick’s antes de continuar hacia Kingman.</li></ul></div></details>
+      <details class="activity-place"><summary>Kingman y Ruta 66</summary><div class="activity-content"><ul><li>Recorrido por el tramo histórico de la Ruta 66.</li></ul></div></details>
+      <details class="activity-place"><summary>Gran Cañón</summary><div class="activity-content"><ul><li>Visita al Gran Cañón con base en Tusayan.</li></ul></div></details>
+      <details class="activity-place"><summary>Page</summary><div class="activity-content"><ul><li>Lower Antelope Canyon.</li><li>Excursión a Monument Valley.</li></ul></div></details>
+      <details class="activity-place"><summary>Zion · Springdale</summary><div class="activity-content"><ul><li>Visita al Parque Nacional Zion.</li></ul></div></details>
+      <details class="activity-place"><summary>Las Vegas</summary><div class="activity-content"><ul><li>Hotel Flamingo y recorrido por el Strip.</li><li>Espectáculo de Cirque du Soleil.</li><li><a href="https://docs.google.com/presentation/d/1KARwvApfmHhubJ_POVBkjts1zTG_OGKQNuaEFuxOsso/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Presentación de Las Vegas</a>.</li></ul></div></details>
+      <details class="activity-place"><summary>Three Rivers · Sequoia</summary><div class="activity-content"><ul><li>Tour por el Parque Nacional Sequoia.</li></ul></div></details>
+      <details class="activity-place"><summary>San Francisco</summary><div class="activity-content"><ul><li>Muir Woods.</li><li>Partido de los Warriors.</li><li><a href="https://docs.google.com/presentation/d/1KARwvApfmHhubJ_POVBkjts1zTG_OGKQNuaEFuxOsso/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Alcatraz · presentación</a>.</li><li>Chinatown.</li></ul></div></details>
+      <details class="activity-place"><summary>Napa</summary><div class="activity-content"><ul><li>Visita a Napa.</li></ul></div></details>
+      <details class="activity-place"><summary>Sunnyvale · Mountain View · Cupertino</summary><div class="activity-content"><ul><li>Computer History Museum (CHM).</li><li>Apple Park / Apple.</li></ul></div></details>
+      <details class="activity-place"><summary>Monterey · Seaside · Marina</summary><div class="activity-content"><ul><li><a href="https://docs.google.com/presentation/d/1twI0hwoNIVc-BgRYylL_ujWLbP4GM1RSgq7kPJJJ3r0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Monterey Bay Aquarium · presentación</a>.</li><li>Recorrido por Big Sur.</li></ul></div></details>
+      <details class="activity-place"><summary>San Simeon · Cambria</summary><div class="activity-content"><ul><li>Parada y alojamiento en la zona durante el recorrido costero.</li></ul></div></details>
+    </div>
+  </section>
+</main>
+<footer>Viaje costa oeste 2026-27 · Información para toda la familia</footer>
+</div>
+<script>
+document.querySelectorAll('[data-tab]').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('[data-tab]').forEach(item => {
+      const selected = item === button;
+      item.classList.toggle('active', selected);
+      item.setAttribute('aria-selected', String(selected));
+    });
+    document.querySelectorAll('.tab-panel').forEach(panel => {
+      panel.hidden = panel.id !== button.dataset.tab;
+    });
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+});
+</script>
 </body>
 </html>
